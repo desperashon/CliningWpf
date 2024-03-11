@@ -9,20 +9,20 @@
       Title="EmployeePage" Background="White">
 
     <Page.Resources>
-        <!-- Стили для текстовых блоков и кнопки -->
+       
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="5"/>
         </Style>
         <Style x:Key="EmployeeNameStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="Foreground" Value="Black"/>
-            <!-- Дополнительные свойства стиля для имени сотрудника -->
+        
         </Style>
-        <!-- Остальные стили оставляем без изменений -->
+
     </Page.Resources>
 
     <Grid>
-        <!-- Список всех сотрудников -->
+
         <ListBox Name="EmployeesListBox" Margin="10" Width="200" HorizontalAlignment="Left">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -31,7 +31,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <!-- Информация о выбранном сотруднике -->
+    
         <StackPanel Name="EmployeeDetails" Margin="213,10,334,10" >
             <Image Name="EmployeePhoto" Width="100" Height="100" Stretch="UniformToFill" Margin="0,0,0,10"/>
             <TextBlock Name="EmployeeId" Style="{StaticResource EmployeeDetailsStyle}"/>
@@ -41,7 +41,7 @@
             <Button Name="ContactButton" Content="Связаться" Style="{StaticResource ContactButtonStyle}"/>
         </StackPanel>
 
-        <!-- Окно "Где нужно прибраться" -->
+    
         <StackPanel Margin="0,10,0,0" Width="329" HorizontalAlignment="Right" VerticalAlignment="Top">
             <TextBlock Text="Где нужно прибраться" FontWeight="Bold" Margin="0,0,0,5" Style="{StaticResource SectionTitleStyle}"/>
 

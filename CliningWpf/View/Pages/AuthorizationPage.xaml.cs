@@ -50,10 +50,10 @@ namespace CliningWpf.View.Pages
 
         private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            // Создание экземпляра страницы регистрации
+    
             RegistrationPage registrationPage = new RegistrationPage();
 
-            // Переход на страницу регистрации
+            
             NavigationService.Navigate(registrationPage);
         }
     }

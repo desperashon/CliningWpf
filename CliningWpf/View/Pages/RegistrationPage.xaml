@@ -9,12 +9,11 @@
       Title="RegistrationPage">
 
     <Page.Resources>
-        <!-- Стиль для текстовых блоков -->
+       
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="5"/>
         </Style>
 
-        <!-- Стиль для текстового поля -->
         <Style TargetType="TextBox">
             <Setter Property="Width" Value="300"/>
             <Setter Property="Height" Value="30"/>
@@ -25,7 +24,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
 
-        <!-- Стиль для парольного поля -->
+      
         <Style TargetType="PasswordBox">
             <Setter Property="Width" Value="300"/>
             <Setter Property="Height" Value="30"/>
@@ -36,7 +35,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
 
-        <!-- Стиль для кнопки -->
+    
         <Style TargetType="Button">
             <Setter Property="Width" Value="150"/>
             <Setter Property="Height" Value="40"/>
@@ -62,7 +61,7 @@
             </Setter>
         </Style>
 
-        <!-- Стиль для метки-гиперссылки -->
+     
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="Foreground" Value="#007ACC"/>

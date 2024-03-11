@@ -16,7 +16,7 @@
         </Grid.ColumnDefinitions>
             <TextBlock Text="Сотрудники:" FontWeight="Bold" Margin="0,0,0,10"/>
 
-        <!-- Список сотрудников -->
+   
         <ListBox x:Name="EmployeesListBox" Grid.Column="0" Margin="0,26,20,10" ItemsSource="{Binding Employees}" SelectionChanged="EmployeesListBox_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -25,9 +25,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <!-- Подписи к полям оборудования -->
-        <!-- Исполняемые услуги выбранного сотрудника -->
-        <!-- Исполняемые услуги выбранного сотрудника -->
+      
         <ListBox x:Name="SelectedEmployeeServicesListBox" Grid.Column="2" Height="200" VerticalAlignment="Top" Margin="20,26,20,10">
             <ListBox.ItemTemplate>
                 <DataTemplate>

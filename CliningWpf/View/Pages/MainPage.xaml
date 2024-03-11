@@ -9,7 +9,7 @@
       Title="MainPage">
 
     <Page.Resources>
-        <!-- Стили для кнопок навигации -->
+      
         <Style x:Key="NavigationButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="Black"/>

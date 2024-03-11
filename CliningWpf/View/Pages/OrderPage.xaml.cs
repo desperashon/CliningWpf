@@ -35,13 +35,13 @@ namespace CliningWpf.View.Pages
                     {
                         Description = description,
                         Cost = decimal.Parse(CostTextBox.Text),
-                        DateRequested = DatePicker.SelectedDate ?? DateTime.Now // Пример даты, может быть изменено на ваше требование
+                        DateRequested = DatePicker.SelectedDate ?? DateTime.Now 
                     };
 
                     _context.Requests.Add(newRequest);
                     _context.SaveChanges();
 
-                    // Добавление записи о новом заказе в Service_Request
+                    
                     var serviceRequest = new Service_Request
                     {
                         RequestID = newRequest.RequestID,

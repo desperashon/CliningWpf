@@ -102,10 +102,10 @@ namespace CliningWpf.View.Pages
 
         private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            // Создание экземпляра страницы входа
+          
             AuthorizationPage loginPage = new AuthorizationPage();
 
-            // Переход на страницу входа
+          
             NavigationService.Navigate(loginPage);
         }
     }
