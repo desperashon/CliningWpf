@@ -1,0 +1,77 @@
+﻿<Page x:Class="CliningWpf.View.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CliningWpf.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Page.Resources>
+        <!-- Стили для кнопок навигации -->
+        <Style x:Key="NavigationButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Blue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button Name="MainPageLb" 
+                    Content="Главная"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="MainPageLb_Click"/>
+
+            <Button Name="EqipmentPage"
+                    Content="Оборудование"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="EqipmentPage_Click"/>
+
+            <Button Name="EmplouePage"
+                    Content="Нанятые сотрудники"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="EmplouePage_Click"/>
+
+            <Button Name="Services"
+                    Content="Услуги"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="Services_Click"/>
+
+            <Button Name="OrderPage"
+                    Content="Заявки"
+                    Style="{StaticResource NavigationButtonStyle}"
+                    Click="OrderPage_Click"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrm"
+               NavigationUIVisibility="Hidden"
+               Grid.Row="1" Margin="10" />
+    </Grid>
+</Page>

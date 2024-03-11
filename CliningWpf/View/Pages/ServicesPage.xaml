@@ -1,0 +1,50 @@
+﻿<Page x:Class="CliningWpf.View.Pages.ServicesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CliningWpf.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ServicesPage">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+            <TextBlock Text="Сотрудники:" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <!-- Список сотрудников -->
+        <ListBox x:Name="EmployeesListBox" Grid.Column="0" Margin="0,26,20,10" ItemsSource="{Binding Employees}" SelectionChanged="EmployeesListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FullName}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- Подписи к полям оборудования -->
+        <!-- Исполняемые услуги выбранного сотрудника -->
+        <!-- Исполняемые услуги выбранного сотрудника -->
+        <ListBox x:Name="SelectedEmployeeServicesListBox" Grid.Column="2" Height="200" VerticalAlignment="Top" Margin="20,26,20,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontWeight="SemiBold" Foreground="GreenYellow" HorizontalAlignment="Center">Услуга</TextBlock>
+                        <TextBlock FontWeight="Bold">Описание:</TextBlock>
+                        <TextBlock Text="{Binding Description}" Margin="0,0,0,5"/>
+                        <TextBlock FontWeight="Bold">Стоимость:</TextBlock>
+                        <TextBlock Text="{Binding Cost, StringFormat={}{0:C}}" Margin="0,0,0,5"/>
+                        <TextBlock FontWeight="Bold">Дата запроса:</TextBlock>
+                        <TextBlock Text="{Binding DateRequested, StringFormat=dd.MM.yyyy}" Margin="0,0,0,5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+        <TextBlock Text="Исполняемые услуги:" FontWeight="Bold" HorizontalAlignment="Center" Grid.Column="3" Margin="0,0,0,10"/>
+    </Grid>
+</Page>
