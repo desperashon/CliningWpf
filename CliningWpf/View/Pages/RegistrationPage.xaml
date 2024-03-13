@@ -99,22 +99,22 @@
                />
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="4">
-            <TextBlock Width="150" Text="Введите Email:" Height="15"/>
+            <TextBlock FontSize="15" Width="150" Text="Введите Email:" Height="15"/>
             <TextBox x:Name="LoginTb" Width="300"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="6">
-            <TextBlock Width="150" Text="Повтор пароля:" Height="14"/>
+            <TextBlock FontSize="15" Width="150" Text="Повтор пароля:" Height="20"/>
             <PasswordBox x:Name="RepeatPasswordPb" Width="300"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="5">
-            <TextBlock Width="150" Text="Введите пароль:" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Width="150" FontSize="15" Text="Введите пароль:" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             <PasswordBox x:Name="PasswordPb" Width="300"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="7">
-            <TextBlock Width="150" Text="Введите ФИО:" Height="15"/>
+            <TextBlock FontSize="15" Width="150" Text="Введите ФИО:" Height="15"/>
             <TextBox x:Name="NameTb" Width="300"/>
         </StackPanel>
 

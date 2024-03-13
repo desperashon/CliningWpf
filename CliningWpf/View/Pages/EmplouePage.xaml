@@ -32,7 +32,7 @@
         </ListBox>
 
     
-        <StackPanel Name="EmployeeDetails" Margin="213,10,334,10" >
+        <StackPanel HorizontalAlignment="Center" Name="EmployeeDetails" Margin="213,10,334,10" >
             <Image Name="EmployeePhoto" Width="100" Height="100" Stretch="UniformToFill" Margin="0,0,0,10"/>
             <TextBlock Name="EmployeeId" Style="{StaticResource EmployeeDetailsStyle}"/>
             <TextBlock Name="EmployeeName" Style="{StaticResource EmployeeDetailsStyle}"/>

@@ -56,7 +56,7 @@
         <TextBox Grid.Column="3" Width="100" x:Name="CostTextBox"/>
         <TextBlock Grid.Column="4" Text="Дата заказа:" VerticalAlignment="Center"/>
         <DatePicker Grid.Column="5" x:Name="DatePicker"/>
-        <Button Grid.Column="3" Content="Заказать" Click="OrderBtn_Click" Margin="14,57,40,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" Height="62"/>
+        <Button Grid.Column="3" Content="Заказать" Click="OrderBtn_Click"  Margin="14,57,40,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" Height="62"/>
 
         <TextBlock Grid.Column="0" Grid.Row="1" Text="Выберите оборудование:" VerticalAlignment="Center"/>
         <ComboBox Grid.Column="1" Grid.Row="1" x:Name="cmbEquipment">

@@ -51,7 +51,7 @@ namespace CliningWpf.View.Pages
 
                     _context.Service_Request.Add(serviceRequest);
                     _context.SaveChanges();
-
+                    MessageBox.Show("Заказ добавлен!");
                    
                 }
                 catch (Exception ex)

@@ -43,7 +43,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal">
+        <StackPanel Background="AliceBlue" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal">
             <Button Name="MainPageLb" 
                     Content="Главная"
                     Style="{StaticResource NavigationButtonStyle}"
