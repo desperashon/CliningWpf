@@ -49,16 +49,16 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        
-        <TextBlock  Grid.Column="0" Text="Описание заказа:" VerticalAlignment="Center"/>
+
+        <TextBlock FontSize="14" Grid.Column="0" Text="Описание заказа:" VerticalAlignment="Center"/>
         <TextBox Grid.Column="1" x:Name="DescriptionTextBox" />
-        <TextBlock Grid.Column="2" Text="Стоимость:" VerticalAlignment="Center"/>
+        <TextBlock FontSize="14" Grid.Column="2" Text="Стоимость:" VerticalAlignment="Center" Margin="10,0,0,0"/>
         <TextBox Grid.Column="3" Width="100" x:Name="CostTextBox"/>
-        <TextBlock Grid.Column="4" Text="Дата заказа:" VerticalAlignment="Center"/>
+        <TextBlock FontSize="14" Grid.Column="4" Text="Дата заказа:" VerticalAlignment="Center"/>
         <DatePicker Grid.Column="5" x:Name="DatePicker"/>
         <Button Grid.Column="3" Content="Заказать" Click="OrderBtn_Click"  Margin="14,57,40,0" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="3" Height="62"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="1" Text="Выберите оборудование:" VerticalAlignment="Center"/>
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="1" Text="Выберите оборудование:" VerticalAlignment="Center"/>
         <ComboBox Grid.Column="1" Grid.Row="1" x:Name="cmbEquipment">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -67,8 +67,8 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-       
-        <TextBlock Grid.Column="0" Grid.Row="2" Text="Выберите сотрудника:" VerticalAlignment="Center"/>
+
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Выберите сотрудника:" VerticalAlignment="Center"/>
         <ComboBox Grid.Column="1" Grid.Row="2" x:Name="cmbEmployees">
             <ComboBox.ItemTemplate>
                 <DataTemplate>

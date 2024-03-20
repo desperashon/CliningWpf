@@ -11,9 +11,7 @@ namespace CliningWpf
             InitializeComponent();
             MainFrm.Navigate(new AuthorizationPage());
             PhoneTb.Text = "888-888-888";
-            CityCmb.DisplayMemberPath = "CityName";
-            CityCmb.SelectedValuePath = "CityID";
-            CityCmb.ItemsSource = App.context.City.ToList();
+          
         }
     }
 }

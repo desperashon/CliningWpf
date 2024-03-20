@@ -9,14 +9,14 @@
       Title="EmployeePage" Background="White">
 
     <Page.Resources>
-       
+
         <Style TargetType="TextBlock">
             <Setter Property="Margin" Value="5"/>
         </Style>
         <Style x:Key="EmployeeNameStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="16"/>
             <Setter Property="Foreground" Value="Black"/>
-        
+
         </Style>
 
     </Page.Resources>
@@ -31,8 +31,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-    
-        <StackPanel HorizontalAlignment="Center" Name="EmployeeDetails" Margin="213,10,334,10" >
+
+        <StackPanel HorizontalAlignment="Center" Name="EmployeeDetails" Margin="0,10,0,10" Width="230" >
             <Image Name="EmployeePhoto" Width="100" Height="100" Stretch="UniformToFill" Margin="0,0,0,10"/>
             <TextBlock Name="EmployeeId" Style="{StaticResource EmployeeDetailsStyle}"/>
             <TextBlock Name="EmployeeName" Style="{StaticResource EmployeeDetailsStyle}"/>
@@ -41,7 +41,7 @@
             <Button Name="ContactButton" Content="Связаться" Style="{StaticResource ContactButtonStyle}"/>
         </StackPanel>
 
-    
+
         <StackPanel Margin="0,10,0,0" Width="329" HorizontalAlignment="Right" VerticalAlignment="Top">
             <TextBlock Text="Где нужно прибраться" FontWeight="Bold" Margin="0,0,0,5" Style="{StaticResource SectionTitleStyle}"/>
 
@@ -56,11 +56,11 @@
             </StackPanel>
             <StackPanel Margin="5">
                 <TextBlock Text="Дата начала:" Style="{StaticResource LabelStyle}"/>
-                <DatePicker Name="CleaningStartDate" Style="{StaticResource DatePickerStyle}"/>
+                <DatePicker Name="CleaningStartDate" Style="{StaticResource DatePickerStyle}" Height="38"/>
             </StackPanel>
             <StackPanel Margin="5">
                 <TextBlock Text="Дата окончания:" Style="{StaticResource LabelStyle}"/>
-                <DatePicker Name="CleaningEndDate" Style="{StaticResource DatePickerStyle}"/>
+                <DatePicker Name="CleaningEndDate" Style="{StaticResource DatePickerStyle}" Height="37"/>
             </StackPanel>
             <Button Name="CallButton" Click="CallButton_Click" Content="Вызвать" Width="100" Height="30" Style="{StaticResource ButtonStyle}"/>
         </StackPanel>
